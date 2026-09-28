@@ -1,0 +1,5 @@
+- `[/]` Refactor `emergency_manager.dart` for independent SMS/Call/Backend
+- `[ ]` Refine `MainActivity.kt` native telephony implementation
+- `[ ]` Run `flutter clean` and `flutter pub get`
+- `[ ]` Run `flutter analyze`
+- `[ ]` Run `flutter build apk --debug`
