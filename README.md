@@ -1,135 +1,209 @@
-# 🩺 CareVoice-Edge
+# 🏥 CareVoice-Edge
 
-## Privacy-Preserving Multimodal Patient Monitoring with Edge AI–Driven Behavioral Anomaly Detection and Voice-Assisted Healthcare Intervention
+### Privacy-Preserving Patient Monitoring & Voice-Assisted Healthcare Application
 
-CareVoice-Edge is a Flutter-based healthcare monitoring application designed to support caregivers in monitoring patient activity, reminders, alerts, and safety-related events.
+<p align="center">
+  A Flutter-based mobile application designed to help caregivers monitor
+  patients, manage healthcare routines, and respond to important patient events.
+</p>
 
-The project focuses on privacy-conscious patient monitoring and provides a caregiver-oriented mobile interface for patient activity, reminders, and safety-related information.
+<p align="center">
 
+![Flutter](https://img.shields.io/badge/Flutter-3.x-blue?logo=flutter)
+![Dart](https://img.shields.io/badge/Dart-3.x-blue?logo=dart)
+![Platform](https://img.shields.io/badge/Platform-Android-green?logo=android)
+![GitHub](https://img.shields.io/badge/Source-GitHub-black?logo=github)
 
+</p>
+
+---
+
+## 📌 Project Overview
+
+**CareVoice-Edge** is a Flutter-based healthcare monitoring application designed to support caregivers in monitoring patients, managing daily healthcare routines, and responding to important patient events.
+
+The application provides a centralized interface for patient monitoring, fall detection alerts, emergency response, voice assistance, and patient reminders.
+
+The project focuses on providing a simple and accessible interface for caregivers to monitor patient status and respond to potential emergency situations.
+
+---
 
 ## ✨ Key Features
 
-- 👩‍⚕️ Caregiver dashboard
-- 📊 Patient activity monitoring
-- 🚶 Activity and posture status
-- 🚨 Fall detection interface
-- 🔔 Caregiver alerts
-- 🎙️ Voice-assisted reminders
-- 💊 Reminder management
-- 🛏️ Patient monitoring interface
-- ⚠️ Emergency and alert interface
-- 📱 Flutter-based Android application
-- 🔒 Privacy-oriented monitoring approach
+### 🏥 Patient Health Dashboard
+
+- Patient health overview
+- Health statistics display
+- Alert status
+- Reminder status
+- Response information
+- Centralized caregiver dashboard
+
+### 📹 Live Patient Monitoring
+
+- Patient live monitoring interface
+- Camera access interface
+- Patient activity monitoring
+- Patient status display
+
+### 🚨 Fall Detection & Emergency Response
+
+- Fall detection testing interface
+- Possible fall alert
+- Emergency countdown
+- Patient safety confirmation
+- Emergency Call / SOS option
+
+### 🔊 Voice Assistance
+
+- Voice monitoring interface
+- Patient voice response
+- Voice check functionality
+- Voice prompt status
+
+### ⏰ Patient Voice Reminders
+
+- Daily healthcare reminders
+- Voice reminder interface
+- Reminder scheduling
+- Speaker testing functionality
 
 ---
-## Application Flow
 
-The general application flow is:
+## 📸 App Preview
 
-Patient
-↓
-Camera / Sensors
-↓
-Edge Device
-↓
-Edge AI Processing
-↓
-Activity & Posture Analysis
-↓
-Anomaly Detection
-↓
-Alert Generation
-↓
-CareVoice-Edge Flutter App
-↓
-Caregiver Dashboard
-↓
-Caregiver
+<div align="center">
 
-🛠️ Technology Stack
-Technology :	Purpose
-Flutter : Mobile application development
-Dart : Application programming language
-Android :	Mobile platform
-OpenCV :	Computer vision
-MediaPipe: Pose and activity analysis
-Git :	Version control
-GitHub :	Source code management
+<table>
+<tr>
 
-📂 Project Structure
+<td align="center">
+<img src="screenshots/dashboard.jpg" width="220"><br>
+<b>Caregiver Dashboard</b>
+</td>
+
+<td align="center">
+<img src="screenshots/live-monitor.jpg" width="220"><br>
+<b>Live Patient Monitoring</b>
+</td>
+
+<td align="center">
+<img src="screenshots/fall-alert.jpg" width="220"><br>
+<b>Fall Detection & Emergency Alert</b>
+</td>
+
+</tr>
+
+<tr>
+
+<td align="center">
+<img src="screenshots/voice-reminders.jpg" width="220"><br>
+<b>Patient Voice Reminders</b>
+</td>
+
+</tr>
+</table>
+
+</div>
+
+---
+
+## 🔄 Application Workflow
+
+```text
+        Patient
+           │
+           ↓
+   Patient Activity / Input
+           │
+           ↓
+    CareVoice-Edge App
+           │
+           ↓
+   Activity Monitoring
+           │
+           ↓
+   Alert / Status Display
+           │
+           ↓
+       Caregiver
+ ```
+    
+
+###🛠️ Technology Stack
+
+| Category | Technology |
+|---|---|
+| Framework | Flutter |
+| Programming Language | Dart |
+| Platform | Android |
+| Development IDE | Android Studio |
+| Version Control | Git |
+| Repository | GitHub |
+```
+
+## 📂 Project Structure
+
+```text
 CareVoice-Edge/
 │
-├── android/                 # Android application configuration
-├── ios/                     # iOS configuration
-├── lib/                     # Flutter application source code
-│   ├── main.dart
+├── android/
+│
+├── lib/
+│   ├── models/
+│   ├── providers/
 │   ├── screens/
-│   ├── widgets/
-│   └── services/
+│   ├── services/
+│   ├── theme/
+│   └── widgets/
 │
-├── test/                    # Flutter tests
-├── web/                     # Flutter web configuration
-├── windows/                 # Windows configuration
+├── screenshots/
+│   ├── dashboard.png
+│   ├── live-monitor.png
+│   ├── fall-alert.png
+│   └── voice-reminders.png
 │
-├── docs/                    # Project documentation
-│   └── screenshots/         # Application screenshots
-│
-├── pubspec.yaml             # Flutter dependencies
-├── pubspec.lock             # Dependency lock file
-├── analysis_options.yaml    # Dart analysis configuration
-├── .gitignore
+├── test/
+├── pubspec.yaml
 └── README.md
+```
 
-🚀 Setup Guide
-Prerequisites
+## ⚙️ Installation & Setup
 
-Before running CareVoice-Edge, install the following:
+### Prerequisites
 
-Flutter SDK
-Android Studio
-Android SDK
-Git
-Android Emulator or physical Android device
+- Flutter SDK
+- Dart SDK
+- Android Studio
+- Android device or Android Emulator
+- Git
 
-Verify the Flutter installation:
+### Clone the Repository
 
-flutter doctor
+```bash
+git clone https://github.com/prachimishra01/CareVoice-Edge.git
+```
 
-📥 Clone the Repository
+### Open the Project
 
-Clone the repository using:
-
-git clone https://github.com/YOUR_USERNAME/CareVoice-Edge.git
-
-Navigate to the project directory:
-
+```bash
 cd CareVoice-Edge
-📦 Install Dependencies
+```
 
-Install the Flutter project dependencies:
+### Install Dependencies
 
+```bash
 flutter pub get
-📱 Connect an Android Device
+```
 
-You can run the application using either:
+### Run the Application
 
-A physical Android device with USB debugging enabled
-An Android Emulator configured through Android Studio
-
-Check the available devices:
-
-flutter devices
-▶️ Run the Application
-
-Run the application using:
-
+```bash
 flutter run
+```
+---
 
-To run the application on a specific device:
+## 🎯 Project Objective
+The objective of CareVoice-Edge is to provide a simple and accessible mobile application that assists caregivers in monitoring patients, managing healthcare routines, and responding to important patient events.
 
-flutter run -d DEVICE_ID
-
-Example:
-
-flutter run -d ZA2239TVTC
+The application is designed with a focus on usability, privacy, and caregiver support.
